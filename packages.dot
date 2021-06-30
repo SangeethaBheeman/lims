@@ -1,0 +1,35 @@
+digraph "packages" {
+charset="utf-8"
+rankdir=BT
+"0" [label="lims", shape="box"];
+"1" [label="lims.config", shape="box"];
+"2" [label="lims.database_connections", shape="box"];
+"3" [label="lims.helpers", shape="box"];
+"4" [label="lims.helpers.helper", shape="box"];
+"5" [label="lims.helpers.library_tube_helper", shape="box"];
+"6" [label="lims.helpers.plate_helper", shape="box"];
+"7" [label="lims.helpers.well_helper", shape="box"];
+"8" [label="lims.main", shape="box"];
+"9" [label="lims.src", shape="box"];
+"10" [label="lims.src.customer", shape="box"];
+"11" [label="lims.src.library_tube", shape="box"];
+"12" [label="lims.src.plate", shape="box"];
+"13" [label="lims.src.sample", shape="box"];
+"14" [label="lims.src.well", shape="box"];
+"15" [label="lims.tests", shape="box"];
+"16" [label="lims.tests.mock_db", shape="box"];
+"17" [label="lims.tests.test", shape="box"];
+"18" [label="lims.tests.test_test", shape="box"];
+"2" -> "1" [arrowhead="open", arrowtail="none"];
+"8" -> "1" [arrowhead="open", arrowtail="none"];
+"8" -> "3" [arrowhead="open", arrowtail="none"];
+"8" -> "4" [arrowhead="open", arrowtail="none"];
+"8" -> "5" [arrowhead="open", arrowtail="none"];
+"8" -> "6" [arrowhead="open", arrowtail="none"];
+"8" -> "7" [arrowhead="open", arrowtail="none"];
+"8" -> "10" [arrowhead="open", arrowtail="none"];
+"8" -> "11" [arrowhead="open", arrowtail="none"];
+"8" -> "12" [arrowhead="open", arrowtail="none"];
+"8" -> "13" [arrowhead="open", arrowtail="none"];
+"8" -> "14" [arrowhead="open", arrowtail="none"];
+}

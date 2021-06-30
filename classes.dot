@@ -1,0 +1,13 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Customer|first_name\llast_name\l|connect_to_db()\lget_customer_id()\lsave_customer_details()\l}", shape="record"];
+"1" [label="{DBConnection|connection_config : dict\l|create_connection()\l}", shape="record"];
+"2" [label="{LibraryTube|library_tube_barcode\l|add_samples_to_library_tube(tagged_samples)\lconnect_to_db()\ldelete_samples_from_library_tube()\l}", shape="record"];
+"3" [label="{MockDB|\l|setUpClass(cls)\ltearDownClass(cls)\l}", shape="record"];
+"4" [label="{Plate|plate_barcode\l|connect_to_db()\lcreate_or_update_plate(state)\lget_well_count()\lupdate_plate_state(state)\l}", shape="record"];
+"5" [label="{ReceiveSampleTestCase|\l|setUpClass(cls)\ltearDownClass(cls)\ltest_save_customer_details()\l}", shape="record"];
+"6" [label="{ReceiveSampleTestCase|\l|test_access_database_returns_values()\ltest_save_customer_details(mock_customer)\l}", shape="record"];
+"7" [label="{Sample|sample_name\l|add_sample_tube_barcode(sample_tube_barcode)\ladd_tag(tag)\lconnect_to_db()\lsave_sample(customer_id)\l}", shape="record"];
+"8" [label="{Well|plate_barcode\lwell_position\l|add_sample_to_well(sample_name)\lconnect_to_db()\ldelete_samples_from_well(sample_names)\l}", shape="record"];
+}
